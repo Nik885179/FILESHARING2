@@ -1,12 +1,12 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/VJBots/Advance-File-Share-Bot /Advance-File-Share-Bot
+  git clone https://github.com/Nik885179/FILESHARING2/FILESHARING2
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /Advance-File-Share-Bot
+  git clone $UPSTREAM_REPO /FILESHARING2
 fi
-cd /Advance-File-Share-Bot
+cd /FILESHARING2
 pip3 install -U -r requirements.txt
 echo "Bot Started...."
 python3 bot.py
